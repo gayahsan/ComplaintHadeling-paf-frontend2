@@ -7,7 +7,7 @@ private Connection connect() {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/electrogrid", "root", "gethmi*1223");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/complaints", "root", "");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -42,7 +42,7 @@ public String readComplaints() {
 				output += "<td>" + nComplaint + "</td>";
 				output += "<td>" + anythingMoreToTell + "</td>";
 				// buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"
+				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-warning'></td>"
 						+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-complaintID='"
 						+ complaintID + "'>" + "</td></tr>";
 			}

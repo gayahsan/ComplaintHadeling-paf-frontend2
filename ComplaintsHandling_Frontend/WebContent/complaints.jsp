@@ -85,7 +85,6 @@
 				<input id="btnSave" name="btnSave" type="button" value="Save" style="margin-bottom:15px;" class="btn btn-primary">
 				<input type="hidden" id="hidComplaintIDSave" name="hidComplaintIDSave" value="">
 			</div>
-
 		</form>
 		<div id="alertSuccess" class="alert alert-success"></div>
 		<div id="alertError" class="alert alert-danger"></div>
